@@ -1,54 +1,68 @@
-# React + TypeScript + Vite
+# Bookmark Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, modern personal bookmark manager built with React, TypeScript, and Zustand.
 
-Currently, two official plugins are available:
+## 📝 Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This app allows you to store, manage, add, and delete your favorite bookmarks. Minimalist and user-friendly interface, with data stored in your browser.
 
-## Expanding the ESLint configuration
+## 🚀 Main Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Add new bookmarks (title, URL)
+- Delete individual bookmarks or clear all
+- Quickly open links in a new tab
+- Data persistence using localStorage (Zustand persist)
+- Beautiful, responsive UI with dark mode support
+- Fully typed with TypeScript for type safety
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## ⚡️ Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Run linter
+npm run lint
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Access the app at: http://localhost:5173
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠 Technologies Used
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+- React 19 + TypeScript
+- Zustand (state management, persist)
+- Tailwind CSS
+- Vite
+- Radix UI, Lucide Icons
+
+## 📁 Project Structure
+
 ```
+├── public/               # Static assets (favicon, images, ...)
+├── src/
+│   ├── assets/           # App-specific static assets
+│   ├── components/       # Reusable React components
+│   │   └── ui/           # UI primitives (Button, Input, ...)
+│   ├── hooks/            # Custom React hooks
+│   ├── lib/              # Utility functions
+│   ├── pages/            # Main page components
+│   ├── store/            # Zustand stores (state management)
+│   ├── types/            # TypeScript type definitions
+│   ├── App.tsx           # App root component
+│   ├── main.tsx          # App entry point
+│   └── App.css           # Global styles
+├── index.html            # HTML entry point
+├── package.json          # Project metadata and scripts
+├── vite.config.ts        # Vite configuration
+└── ...                   # Other config files
+```
+
+---
+
+Author: windaround
