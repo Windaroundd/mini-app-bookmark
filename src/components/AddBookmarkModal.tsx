@@ -2,19 +2,19 @@
 
 import type React from "react";
 
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "./ui/dialog";
-import { Label } from "./ui/label";
+} from "@/components/ui/dialog";
+import { Label } from "@/components/ui/label";
 import { Plus } from "lucide-react";
-import { useBookmarkForm } from "../hooks/useBookmarkForm";
-import type { BookmarkFormData } from "../types/bookmark";
+import { useBookmarkForm } from "@/hooks/useBookmarkForm";
+import type { BookmarkFormData } from "@/types/bookmark";
 
 interface AddBookmarkModalProps {
   isOpen: boolean;

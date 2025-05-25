@@ -1,7 +1,7 @@
 import { memo } from "react";
 import { ExternalLink, Trash2 } from "lucide-react";
-import { Button } from "./ui/button";
-import type { Bookmark } from "../types/bookmark";
+import { Button } from "@/components/ui/button";
+import type { Bookmark } from "@/types/bookmark";
 
 interface BookmarkItemProps {
   bookmark: Bookmark;

@@ -2,12 +2,12 @@
 
 import { useEffect, useState } from "react";
 import { RotateCcw } from "lucide-react";
-import { Button } from "../components/ui/button";
-import { useToggle } from "../hooks/useToggle";
-import { useBookmarkStore } from "../store/boomark-store";
-import { BookmarkItem } from "../components/BookmarkItem";
-import { AddBookmarkModal } from "../components/AddBookmarkModal";
-import type { BookmarkFormData } from "../types/bookmark";
+import { Button } from "@/components/ui/button";
+import { useToggle } from "@/hooks/useToggle";
+import { useBookmarkStore } from "@/store/boomark-store";
+import { BookmarkItem } from "@/components/BookmarkItem";
+import { AddBookmarkModal } from "@/components/AddBookmarkModal";
+import type { BookmarkFormData } from "@/types/bookmark";
 import type { JSX } from "react/jsx-runtime"; // Declare JSX variable
 
 export default function BookmarkManager(): JSX.Element {

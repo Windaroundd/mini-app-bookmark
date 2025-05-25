@@ -1,4 +1,4 @@
-import type { Bookmark, BookmarkFormData } from "../types/bookmark";
+import type { Bookmark, BookmarkFormData } from "@/types/bookmark";
 import { create } from "zustand";
 
 import { persist, createJSONStorage } from "zustand/middleware";

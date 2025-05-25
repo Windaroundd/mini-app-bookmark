@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react";
-import type { BookmarkFormData } from "../types/bookmark";
+import type { BookmarkFormData } from "@/types/bookmark";
 
 interface UseBookmarkFormReturn {
   formData: BookmarkFormData;
